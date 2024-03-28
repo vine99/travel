@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Loved+by+the+King&display=swap');
+@font-face {
+    font-family: "verdana";
+    src: url("../fonts/verdana.ttf");
+}
+*,
+*::after,
+*::after{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    --c_red:#EB5757;
+    --c_blue:#2F80ED;
+    --c_black:#000000;
+    --c_gray1:#333333;
+    --c_gray2:#4F4F4F;
+    --c_gray3:#828282;
+    --c_warning:#F2C94C;
+    --c_light:#E0E0E0;
+
+    --ff_times_new_roman:'Times New Roman', Times, serif;
+    --ff_loved_by_the_king:"Loved by the King", cursive;
+    --ff_lora:"Lora", serif;
+    --ff_verdana:"verdana";
+
+    --fs_xl2:33px;
+    --fs_xl:30px;
+    --fs_lg2:22px;
+    --fs_lg:20px;
+    --fs_md2:19px;
+    --fs_md:17px;
+    --fs_def:16px;
+    --fs_sm:14px;
+}
+body{
+    color: var(--c_gray1);
+    font-family: var(--ff_times_new_roman);
+}
+
+p{
+    font-size: var(--fs_md);
+    color: var(--c_gray1);
+    line-height: 1.17em;
+    text-align: justify;
+    margin-bottom: 1.2em;
+}
+.ff_lora p{
+    line-height: 1.3em;
+}
+a{
+    color: var(--c_blue);
+}
+.c_red{color: var(--c_red);}
+.c_blue{color: var(--c_blue);}
+.c_black{color: var(--c_black);}
+.c_gray1{color: var(--c_gray1);}
+.c_gray2{color: var(--c_gray2);}
+.c_gray3{color: var(--c_gray3);}
+.c_warning{color: var(--c_warning);}
+.c_light{color: var(--c_light);}
+
+.ff_times_new_roman{font-family: var(--ff_times_new_roman);}
+.ff_loved_by_the_king{font-family: var(--ff_loved_by_the_king);}
+.ff_lora{font-family: var(--ff_lora);}
+.ff_verdana{font-family: var(--ff_verdana);}
+.fs_xl2{
+    font-size: var(--fs_xl2);
+    line-height: 1.1515em;
+}
+.fs_xl{
+    font-size: var(--fs_xl);
+    line-height: 1.1333em;
+}
+.fs_lg2{
+    font-size: var(--fs_lg2);
+    line-height: 1.1364em;
+}
+.fs_lg{
+    font-size: var(--fs_lg);
+    line-height: 1.15em;
+}
+.fs_md2{
+    font-size: var(--fs_md2);
+    line-height: 1.1579em;
+}
+.fs_md{
+    font-size: var(--fs_md);
+    line-height: 1.2353em;
+}
+.fs_def{
+    font-size: var(--fs_def);
+    line-height: 1.1875em;
+}
+.fs_sm{
+    font-size: var(--fs_sm);
+    /* line-height: 1.1333em; */
+}
+.fw_medium{
+    font-weight: 500;
+}
+.fw_regular{
+    font-weight: 400;
+}
+.text_center{
+    text-align: center;
+}
+.container,
+.container_sm{
+    margin: auto;
+}
+.container{
+    --g:40px;
+    padding-left:calc( 0.5 * var(--g));
+    padding-right:calc( 0.5 * var(--g));
+}
+.row{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: calc( -0.5 * var(--g));
+    margin-right: calc( -0.5 * var(--g));
+}
+.row>div{
+    padding-left:calc( 0.5 * var(--g));
+    padding-right:calc( 0.5 * var(--g));
+}
+.col_6{
+    width: 50%;
+}
+.col_5{
+    width: 41.66%;
+}
+.col_7{
+    width: 58.33%;
+}
+.pattern_line{
+    height: 15px;
+    width: 100%;
+    background-image: url("../img/pattern.svg");
+    background-repeat: repeat-x;
+    background-size: 34px;
+}
+.main{
+    padding:82px 0px;
+}
+.main::before{
+    content: "";
+    display: block;
+    width: 62px;
+    border-top: 6px solid var(--c_red);
+    margin: auto auto 25px auto;
+}
+.article_title{
+    color: var(--c_black);
+    font-size: 90px;
+    line-height: 1.1444em;
+    font-weight: 400;
+}
+.article_subTitle{
+    color: var(--c_black);
+    font-size: 55px;
+    line-height: 1.7273em;
+    font-family: var(--ff_loved_by_the_king);
+    margin-bottom: 0.8182em;
+}
+.article_writer{
+    margin-bottom: 0.15em;
+}
+.article_publish_date{
+    margin-bottom: 4em;
+}
+.article_topImg{
+    width: 413px;
+    margin-bottom: 80px;
+}
+.first_letter{
+    color: var(--c_red);
+    font-size: 2em;
+    margin-top: -0.5em;
+    display: inline-block;
+}
+.travel_writing {
+    padding-top: 44px;
+}
+.travel_writingTitle{
+    color: var(--c_red);
+    font-size: var(--fs_lg);
+    font-family: var(--ff_lora);
+    font-weight: 500;
+    margin-bottom: 4em;
+    text-align: center;
+}
+.travel_writingTitle i{
+    font-weight: 400;
+    font-style: italic;
+}
+img{
+    max-width: 100%;
+}
+.w_100{
+    width: 100%;
+}
+figure{
+    margin-top: 16px;
+    margin-bottom: 39px;
+}
+figure img{
+    margin-bottom: 15px;
+}
+figure figcaption{
+    font-size: var(--fs_sm);
+    color: var(--c_gray3);
+    font-style: italic;
+    text-align: center;
+}
+.travel_writing2 {
+    padding-top: 80px;
+}
+.travel_writing2 .travel_writingTitle{
+    margin-bottom: 8.7em;
+}
+.writer_infoCard{
+    max-width: 447px;
+    border: 1px solid var(--c_light);
+    border-top: 18px solid var(--c_warning);
+    border-radius: 20px;
+    padding: 24px;
+    margin-bottom: 15px;
+}
+.writer_infoTop{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 21px;
+}
+.writer_img{
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    border: 3px solid var(--c_warning);
+    margin-right: 9px;
+}
+.writer_socialLink{
+    margin-top: 6px;
+    text-decoration: none;
+}
+.writer_socialLink img{
+    width: 25px;
+    height: 25px;
+}
+.article_list{
+    list-style: none;
+}
+.article_list li{
+    color: var(--c_gray2);
+    font-size: var(--fs_lg2);
+    font-family: var(--ff_lora);
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+.article_list a{
+    text-decoration: none;
+}
+.article_list a:hover{
+    text-decoration: underline;
+}
+
+@media(min-width:1200px){
+    .container{
+        max-width: 1211px;
+    }
+    .container_sm{
+        max-width: 845px;
+    }
+}
